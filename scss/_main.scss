@@ -1,0 +1,448 @@
+.cars,
+.princess,
+.mikey{
+	// padding: 2em 0; //8em 0 2em 0;
+	position: relative;
+	.disneyCars{
+		position: absolute;
+		////top:-180px;//210
+		left: 0;
+		right: 0;
+		@include breakpoint(medium){
+			//top:-230px;
+		}
+	}
+	h2{
+		font-family: $font-title;
+		color: $blanco;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 2em;
+		width: 90%;
+		margin:0 auto 1.5em auto;
+		@include breakpoint(small){
+			font-size: 2.500em;
+			width: 50%;
+		    margin-bottom: 20px;
+		    margin-top: 110px;
+		}
+		@include breakpoint(medium){
+			margin-top: 180px;
+		}
+
+		@include breakpoint(large){
+			margin-top: 210px;
+		}
+	}
+	@include breakpoint(small){
+		h2.tabletMargin{
+			margin-top: 140px;
+		}
+	}
+	.sopasTop{
+		position: relative;
+		& img{
+			@include breakpoint(medium){
+				margin: 0 auto;
+				width: 75%;
+			}
+		}
+		.porciones-cars{
+			position: absolute;
+			top: 10px;
+			width: 40px;
+			display: inline-block;
+			@include breakpoint(small){
+				width: 55px;
+				top: 80px;
+				left: 10px;
+			}
+			@include breakpoint(medium){
+				width: 80px;
+				top: 80px;
+				left: 106px;
+			}
+			@include breakpoint(large){
+				left: 137px;
+				top: 100px;
+			}
+		}
+		.porciones-princess{
+			position: absolute;
+			top: 10px;
+			width: 40px;
+			display: inline-block;
+			@include breakpoint(small){
+				width: 55px;
+				top: 50px;
+				left: 10px;
+			}
+			@include breakpoint(medium){
+				width: 80px;
+				top: 40px;
+				left: 101px;
+			}
+			@include breakpoint(large){
+				top: 55px;
+				left: 130px;
+			}
+		}
+		.porciones-mikey{
+			position: absolute;
+			top: 10px;
+			width: 40px;
+			display: inline-block;
+			@include breakpoint(small){
+				width: 55px;
+				top: 40px;
+				left: 33px;
+			}
+			@include breakpoint(medium){
+				width: 80px;
+				top: 32px;
+				left: 122px;
+			}
+			@include breakpoint(large){
+				top: 43px;
+				left: 156px;
+			}
+		}
+	}
+
+	.bowl{
+		position: relative;
+		margin-top: 25px;
+		margin-bottom: 1.5em;
+		& img {
+			width: 70%;
+			margin: 0 auto;
+			@include breakpoint(large){
+				width: 50%;
+			}
+		}
+		@include breakpoint(small){
+			margin-bottom: 0;
+		}
+
+
+
+		.arrowBowl{
+			position: absolute;
+			width: 40%;
+			left:100px;
+			top: 90px;
+			transform : rotate(380deg);
+			@include breakpoint(small){
+				left: 250px;
+				top: 0px;
+				transform: rotate(315deg);
+			}
+			@include breakpoint(medium){
+				left: 300px;			
+			}
+			@include breakpoint(large){
+				left: 330px;
+				width: 55%;
+			}
+		}
+		.factsMini{
+			position: absolute;
+			display: none;
+			@include breakpoint(medium){
+			    display: inline-block;
+			    left: 0;
+			    width: 80%;
+			    top: 160px;
+			}
+			@include breakpoint(large){
+				top: 140px;
+			}
+		}
+		.factsMini-2{
+			position: absolute;
+			display: none;
+			@include breakpoint(medium){
+			    display: inline-block;
+			    left: 0;
+			    width: 80%;
+			    top: 160px;
+			}
+			@include breakpoint(large){
+				top: 140px;
+				left: 30px;
+			}
+		}
+		.factsMini-3{
+			position: absolute;
+			display: none;
+			@include breakpoint(medium){
+			    display: inline-block;
+			    left: 0;
+			    width: 80%;
+			    top: 145px;
+			}
+			@include breakpoint(large){
+				top: 140px;
+			}
+		}
+	}
+	.text_bowl{
+		font-family: $font-title, sans-serif;
+		font-size: 1.8em;
+		text-align: center;
+		color: $blanco;
+		margin-bottom: 1.1em;
+		width: 60%;
+		margin: 1em auto;
+		@include breakpoint(small){
+			width: 70%;
+			letter-spacing: 3px;
+			line-height: 32px;
+			margin-left: 20px;
+		}
+		@include breakpoint(medium){
+			width: 50%;
+		}
+		@include breakpoint(large){
+			text-align: left;
+			width: 40%;
+		}
+	}
+	ul.formas_bowl{
+		margin: 0;
+		padding: 0;
+		display: flex;
+		justify-content:space-between;
+		list-style: none;
+		@include breakpoint(small){
+			display: inherit;
+		}
+		@include breakpoint(medium){
+			position: relative;
+			left:-50px;
+		}
+		li{
+			@include breakpoint(small){
+				display: inline-block;
+				margin-right: 20px;
+				&:last-child{
+					margin-right: 0;
+				}
+			}
+			& img{
+				width: 90%;
+				@include breakpoint(small){
+					width: 60px;
+				}
+				@include breakpoint(medium){
+					width: 80px;
+				}
+			}
+		}
+		@include breakpoint(large){
+			li.mBox{
+				height: 30px;
+				margin-left: auto;
+				margin-right: auto;
+				& img{
+					width: 57%;
+					display: inline-block;
+				}
+			}
+		}
+	}
+
+}
+
+.cars{
+	padding-top: 105px;//120
+	padding-bottom: 90px;
+	top: -30px;
+	@include breakpoint(small){
+		padding-bottom:140px;
+	}
+	@include breakpoint(medium){
+		padding-bottom: 10em;
+	}
+	.disneyCars{
+		top: -140px;//150
+		@include breakpoint(small){
+			top:-185px;
+		}
+		@include breakpoint(large){
+			top: -225px;
+		}
+	}
+}
+
+
+.princess{
+	padding: 2em 0 5em 0;
+	@include breakpoint(small){
+		padding-bottom: 13em;
+	}
+	@include breakpoint(medium){
+		h2{
+			margin-top: 160px;
+		}
+	}
+	.disneyPrincess{
+		position: absolute;
+		top:-105px;//105
+		left: 0;
+		right: 0;	
+		@include breakpoint(small){
+			top:-145px;
+		}
+		@include breakpoint(medium){
+			top: -180px;
+		}	
+	}
+	.tabletMarginPrincess{
+		padding-top: 20px;//70
+		@include breakpoint(iv){
+			padding-top: 0px;
+		}
+		@include breakpoint(large){
+			padding-top: 60px;//200
+		}
+	}
+
+	//el flexbox
+	@include breakpoint(large){
+		#box-wrapper-inner{
+			width: 100%;
+			display: -webkit-box;
+			display: -moz-box;
+			display: box;
+
+			-webkit-box-orient: horizontal;
+			-moz-box-orient: horizontal;
+			box-orient: horizontal;
+
+			-webkit-box-pack: start;
+			-moz-box-pack: start;
+			box-pack: start;
+
+			-webkit-box-direction: normal;
+			-moz-box-direction: normal;
+			box-direction: normal;
+
+			-webkit-box-align: stretch;
+			-moz-box-align: stretch;
+			box-align: stretch;
+
+
+			.box1 {
+				-webkit-box-ordinal-group: 2;
+				-moz-box-ordinal-group: 2;
+				box-ordinal-group: 2;
+
+				-webkit-box-flex: 0;
+				-moz-box-flex: 0;
+				box-flex: 0;
+			}
+
+			.box2 {
+				-webkit-box-ordinal-group: 1;
+				-moz-box-ordinal-group: 1;
+				box-ordinal-group: 1;
+
+				-webkit-box-flex: 0;
+				-moz-box-flex: 0;
+				box-flex: 0;
+			}
+			
+			//alineacionde textos
+			.reverse_text_bowl {
+				text-align: right !important;
+				float: right;
+				clear: both;
+				margin-right: 50px;
+			}
+			.formas_bowl_reverse{
+				float: right;
+				@include breakpoint(large){
+					position: relative;
+					left: 30px;
+				}
+			}
+
+			.reverse_Arrow{
+			    transform: rotateZ(-220deg) !important;
+			    left: -70px !important;
+			}
+
+		}//fin #box-wrapper-inner
+	}
+
+}
+
+.mikey{
+	padding-top: 80px;//140
+	padding-bottom: 60px;
+	.disneyMikey{
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: -125px;
+		@include breakpoint(small){
+			top:-240px;
+		}
+	}
+	@include breakpoint(small){
+		.mikeyTop{
+			margin-top: 30px;
+			@include breakpoint(medium){
+				margin-top: 110px;
+			}
+			@include breakpoint(large){
+				margin-top: 160px;//300
+			}
+		}
+	}
+}
+
+.disneyCars,
+.disneyPrincess,
+.disneyMikey{
+
+	.copy{
+		position: absolute;
+		color: #ffffff;
+		left:10px;
+		bottom:28px;
+		font-size: 0.7em;
+		text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+		@include breakpoint(medium){
+			bottom: 40px;
+			font-size: 1em;
+		}
+		@include breakpoint(large){
+			bottom: 45px;
+		}
+	}
+	.copyMikey{
+	    position: absolute;
+	    color: #ffffff;
+	    right: 3px;
+	    bottom: 20px;
+	    font-size: 0.7em;
+	    text-shadow: 1px 1px 2px rgba(150, 150, 150, 1);
+	    @include breakpoint(small){
+	    	right: 13px;
+	    	bottom: 40px;
+	    }
+	    @include breakpoint(medium){
+	    	font-size: 1em;
+	    	bottom: 50px;
+	    }
+	}
+
+}
+
+
+
+
+
+

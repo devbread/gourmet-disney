@@ -1,0 +1,204 @@
+body{
+	font-family: $font-text-normal;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	background-color: #1F1F1F;
+}
+
+
+header{
+	height: auto;
+	padding: 2em 0 5em 0;
+	@include breakpoint(small){
+		padding-bottom: 8em;//7
+	}
+	@include breakpoint(medium){
+		padding-bottom: 9.5em;
+	}
+	@include breakpoint(large){
+		padding-bottom: 14.5em;
+	}
+	.logo{
+		margin:2em auto;
+		width: 80%;
+		@include breakpoint(small){
+			width: 50%;
+		}
+	}
+	h1{
+		font-family: $font-title;
+		color: $blanco;
+		text-align: center;
+		text-transform: uppercase;
+		font-size: 1.875em;
+		width: 80%;
+		margin:1em auto;
+		@include breakpoint(small){
+			font-size: 2.500em;
+			margin: 0 auto 1em auto;
+		}
+		@include breakpoint(medium){
+			margin-bottom: 20px;
+		}
+		@include breakpoint(large){
+			font-size: 3.4em;
+		}
+	}
+	.text-bajada{
+		font-size: 1.1em;
+		text-align: center;
+		color: $blanco;
+		font-family: $font-text-normal, sans-serif;
+		@include breakpoint(small){
+			font-size: 1.3em;
+			width: 80%;
+			margin: 0 auto 1.4em auto;
+		}
+		@include breakpoint(medium){
+			width: 70%;
+		}
+		@include breakpoint(medium){
+			width: 55%;
+		}
+		@include breakpoint(large){
+			font-size: 1.6em;
+			width: 70%;
+		}
+	}
+
+	.sopasTop{
+  		padding: 10px;
+		& img{
+	  		@include breakpoint(small){
+	  			margin: 0 auto;
+	  		}
+		}
+		@include breakpoint(small){
+			width: 80%;
+			margin: 0 auto;
+		}
+	}
+
+	.allPlatos{
+		display: flex;
+		justify-content:center; 
+		width: 100%;
+  		position: relative;
+		height: 170px;
+		margin-bottom: 20px;
+		margin-top: 25px;
+  		.elbajo{
+  			position: absolute;
+  			left:0;
+  			bottom: 0;
+  			right: 0;
+  			color:$blanco;
+			font-family: $font-title;	
+			text-transform: uppercase;
+			font-size: 1.3em;
+			margin: 0 auto;
+			width: 80%;
+			text-align: center;
+			@include breakpoint(small){
+				left: 330px;
+				bottom: -10px;
+			}
+			@include breakpoint(medium){
+				left: 480px;
+				width: 55%;
+				bottom:-20px;
+			}
+			@include breakpoint(large){
+				left: 620px;
+				width: 53%;
+				bottom: -58px;
+				font-size: 25px;
+			}
+  		}
+  		.arrowM{
+			width: 18%;
+			max-width: 52px;
+			position: absolute;
+			left: 120px;
+			top: 65px;
+			@include breakpoint(small){
+				max-width: 85px;
+				width: 25%;
+				transform : rotate(350deg);
+				left: 265px;
+				top: 45px;
+				z-index: 9;
+				@include breakpoint(large){
+					max-width: 125px;
+				}
+			}
+			@include breakpoint(medium){
+				left: 395px;
+				top: 55px;
+			}
+			@include breakpoint(large){
+				left: 485px;
+				top: 65px;
+			}
+  		}
+		.platos_1,.platos_2,.platos_3{
+			position: relative;
+	  		@include breakpoint(small){
+	  			& img{
+	  				max-width: 130%;
+	  				@include breakpoint(large){
+	  					max-width: 115%;
+	  				}
+	  			}
+	  		}
+		}
+		.platos_1{
+			// left: -40px;
+			z-index: 3;
+		}
+		.platos_2{
+			left: 40px;
+		}
+		.platos_3{
+			right: 30px;
+			z-index: 0;
+		}
+	}//FIN .ALLPLATOS
+	.facts{
+		width: 80%;
+		margin: 1.5em auto;
+		@include breakpoint(medium){
+			width: 65%;
+		}
+		@include breakpoint(large){
+			width: 60%;
+			float: left;
+			margin-left: 10px;
+		}
+	}
+	ul.caracteristicas{
+		width: 100%;
+		margin:0 auto;
+		padding: 0;
+		list-style: none;
+		@include breakpoint(large){
+			padding-left: 50px;
+		}
+		li{
+			color:$blanco;
+			text-align: center;
+			font-family: $font-title;
+			font-size: 1.5em;
+			& i{
+				color:#6AA04B;
+			}
+			@include breakpoint(small){
+				text-align: left;
+			}
+			@include breakpoint(large){
+				font-size: 2em;
+			}
+		}
+	}
+}
